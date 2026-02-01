@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(200, 216, 248);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.inputfield{
+    flex-wrap: wrap;
+    border-style: none;
+    background-color: white;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    margin: 30px;
+    min-height: 150px;
+
+}
+.inputfield h1{
+    min-height: 25px;
+    max-height: 50px;
+    background-color:rgb(97, 147, 247);
+    text-align: center;
+    padding: 10px;
+    height: 30px;
+}
+.input{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.input input{
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border-width: 2px;
+}
+.input select{
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border-width: 2px;
+}
+.input button{
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(97, 147, 247);
+    border-color:rgb(97, 147, 247);
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.2 ease;
+}
+.input button:hover{
+    color: rgb(2, 85, 250);
+    transform: scale(1.01);
+    transition: scale(1.05);
+}
+
+.input input,
+.input select{
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.input input:hover,
+.input select:hover,
+.input input:focus,
+.input select:focus{
+    transform: scale(1.01);
+    border-color: rgb(97, 147, 247);
+    box-shadow: 0 0 6px rgba(97,147,247,0.6);
+    outline: none;
+}
+
+.expense{
+    display: grid;
+    gap: 20px;;
+}
+.expense h1{
+    padding-left: 30px;
+    background-color: rgb(200, 216, 248);
+}
+.expense h3{
+    padding-left: 30px;
+    background-color: rgb(97, 147, 247);
+    padding: 20px;
+    margin-inline: 30px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+}
+.expense table{
+    background-color:white;
+    margin: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.expense th,
+.expense td{
+    padding: 10px;
+    border-bottom: 1px solid #999;
+    text-align: center;
+}
+
+.deleteBtn{
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.deleteBtn:hover{
+    opacity: 0.8;
+}
